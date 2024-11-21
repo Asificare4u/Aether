@@ -9,43 +9,27 @@ function submitPrompt() {
     switch (currentStep) {
         case 0: // Name input
             document.getElementById('user-name').textContent = userInput;
-            progress += 10; // Increment by 10% for name
+            progress += 20; // Increment by 20% for name
             break;
         case 1: // Email input
             document.getElementById('user-surname').textContent = userInput;
-            progress += 10; // Increment by 10% for email
+            progress += 20; // Increment by 20% for email
             break;
         case 2: // Surname input
             document.getElementById('user-age').textContent = userInput;
-            progress += 10; // Increment by 10% for surname
+            progress += 20; // Increment by 20% for surname
             break;
         case 3: // Surname input
             document.getElementById('user-gender').textContent = userInput;
-            progress += 10; // Increment by 10% for surname
+            progress += 20; // Increment by 20% for surname
             break;
-        case 4: // Gender input
-            document.getElementById('campus-name').textContent = userInput;
-            progress += 10; // Increment by 10% for gender
+        case 4: // Email input
+            document.getElementById('user-email').textContent = userInput;
+            progress += 20; // Increment by 20% for User email
             break;
         case 5: // Gender input
-            document.getElementById('user-assignment-type').textContent = userInput;
-            progress += 10; // Increment by 10% for gender
-            break;
-        case 6: // Gender input
-            document.getElementById('user-highest-degree:').textContent = userInput;
-            progress += 10; // Increment by 10% for gender
-            break;
-        case 7: // Gender input
-            document.getElementById('user-country:').textContent = userInput;
-            progress += 10; // Increment by 10% for gender
-            break;
-        case 8: // Campus name input
-            document.getElementById('user-email').textContent = userInput;
-            progress += 10; // Increment by 10% for campus name
-            break;
-        case 9: // Gender input
             document.getElementById('contact-number').textContent = userInput;
-            progress += 10; // Increment by 10% for gender
+            progress += 20; // Increment by 20% for gender
             break; 
         
        
@@ -79,26 +63,10 @@ function updatePrompt(step) {
             inputField.setAttribute('type', 'text');
             break;       
         case 4:
-            promptDescription.textContent = 'Enter your campus name:';
-            inputField.setAttribute('type', 'text');
-            break;
-        case 5:
-            promptDescription.textContent = 'Enter your assignment type:';
-            inputField.setAttribute('type', 'text');
-            break;
-        case 6:
-            promptDescription.textContent = 'Enter your highest degree:';
-            inputField.setAttribute('type', 'text');
-            break;
-        case 7:
-            promptDescription.textContent = 'Enter your country:';
-            inputField.setAttribute('type', 'text');
-            break;
-        case 8:
             promptDescription.textContent = 'Enter your email:';
             inputField.setAttribute('type', 'email');
             break; 
-        case 9:
+        case 5:
             promptDescription.textContent = 'Enter your Contact Number:';
             inputField.setAttribute('type', 'text');
             break;    

@@ -9,19 +9,19 @@ function submitPrompt() {
     switch (currentStep) {
         case 0: // Name input
             document.getElementById('user-name').textContent = userInput;
-            progress += 20; // Increment by 20% for name
+            progress += 10; // Increment by 10% for name
             break;
         case 1: // Email input
             document.getElementById('user-surname').textContent = userInput;
-            progress += 20; // Increment by 20% for email
+            progress += 10; // Increment by 20% for surname
             break;
         case 2: // Surname input
             document.getElementById('user-age').textContent = userInput;
-            progress += 20; // Increment by 20% for surname
+            progress += 20; // Increment by 20% for age
             break;
         case 3: // Surname input
             document.getElementById('user-gender').textContent = userInput;
-            progress += 20; // Increment by 20% for surname
+            progress += 20; // Increment by 20% for gender
             break;
         case 4: // Email input
             document.getElementById('user-email').textContent = userInput;
@@ -29,7 +29,7 @@ function submitPrompt() {
             break;
         case 5: // Gender input
             document.getElementById('contact-number').textContent = userInput;
-            progress += 20; // Increment by 20% for gender
+            progress += 20; // Increment by 20% for contact number
             break; 
         
        
@@ -38,7 +38,7 @@ function submitPrompt() {
     updateProgress();
     currentStep++;
 
-    if (currentStep === 11) {
+    if (currentStep === 6) {
         // Hide prompt container when all steps are completed
         document.getElementById('prompt-container').style.display = 'none';
     } else {
@@ -50,6 +50,10 @@ function updatePrompt(step) {
     const promptDescription = document.getElementById('prompt-description');
     const inputField = document.getElementById('input-field');
     switch (step) {
+        case 0:
+            promptDescription.textContent = 'Enter your name:';
+            inputField.setAttribute('type', 'text');
+            break;
         case 1:
             promptDescription.textContent = 'Enter your surname:';
             inputField.setAttribute('type', 'text');

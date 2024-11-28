@@ -34,8 +34,6 @@ function visit(element,link) {
 }
 
 mouseover(article_card, cursor);  // Call the function mouseover with the parameters article_card and cursor
-mouseover(links_card, cursor);  // Call the function mouseover with the parameters links_card and cursor
-mouseover(sitemap, cursor);  // Call the function mouseover with the parameters sitemap and cursor
 
 // Call the function visit with the parameters and the link
 visit(article1, "./subpages/article1.html");

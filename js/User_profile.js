@@ -25,12 +25,20 @@ function submitPrompt() {
             break;
         case 4: // Email input
             document.getElementById('user-email').textContent = userInput;
-            progress += 20; // Increment by 20% for User email
+            progress += 10; // Increment by 20% for User email
             break;
         case 5: // Gender input
             document.getElementById('contact-number').textContent = userInput;
-            progress += 20; // Increment by 20% for contact number
+            progress += 10; // Increment by 20% for contact number
             break; 
+        case 6: // Country input
+            document.getElementById('user-Country:').textContent = userInput;
+            progress += 10; // Increment by 20% for contact number
+            break;
+        case 7: // Suggestions input
+            document.getElementById('Any suggestions?').textContent = userInput;
+            progress += 10; // Increment by 20% for contact number
+            break;
         
        
     }
@@ -38,7 +46,7 @@ function submitPrompt() {
     updateProgress();
     currentStep++;
 
-    if (currentStep === 6) {
+    if (currentStep === 8) {
         // Hide prompt container when all steps are completed
         document.getElementById('prompt-container').style.display = 'none';
     } else {
@@ -74,7 +82,14 @@ function updatePrompt(step) {
             promptDescription.textContent = 'Enter your Contact Number:';
             inputField.setAttribute('type', 'text');
             break;    
-    
+        case 6:
+                promptDescription.textContent = 'Country:';
+                inputField.setAttribute('type', 'text');
+                break;   
+        case 7:
+                promptDescription.textContent = 'Suggestions:';
+                inputField.setAttribute('type', 'text');
+                break; 
 
     }
 }

@@ -164,3 +164,28 @@ div.subtopics {
         font-size: 14px;
     }
 }
+/* Add to your CSS file */
+.btn-service {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-service:hover {
+    background-color: #45a049;
+}
+body {
+    background-color: #e1e8e1; /* light green */
+    color: #2c3e50; /* dark text for contrast */
+  }
+  
+  nav {
+    background-color: #6e8b3d; /* earth green */
+  }
+  
